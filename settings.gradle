@@ -1,0 +1,14 @@
+// ===== OLD (BROKEN) =====
+// rootProject.name = 'AndroidStarter'
+// include ':app'
+
+// ===== NEW (FIXED) =====
+pluginManagement {
+    repositories { google(); mavenCentral(); gradlePluginPortal() }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories { google(); mavenCentral() }
+}
+rootProject.name = 'AndroidStarter'
+include ':app'
